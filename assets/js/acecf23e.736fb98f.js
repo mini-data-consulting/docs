@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkperiscope=self.webpackChunkperiscope||[]).push([[1903],{1912:e=>{e.exports=JSON.parse('{"blogBasePath":"/release-notes","blogTitle":"Release Notes","authorsListPath":"/release-notes/authors"}')}}]);
