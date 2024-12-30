@@ -37,21 +37,18 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
         },
         blog: {
+          path: "blog",
+          routeBasePath: "release-notes",
           showReadingTime: true,
           feedOptions: {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
+          blogTitle: "Release Notes",
+          blogDescription: "Release Notes for Periscope Chat",
+          blogSidebarTitle: "Release Notes",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -76,7 +73,7 @@ const config: Config = {
           position: "left",
           label: "Tutorial",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/release-notes", label: "Release Notes", position: "left" },
         {
           href: "https://github.com/mini-data-consulting/docs",
           label: "GitHub",
@@ -117,8 +114,8 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "Release Notes",
+              to: "/release-notes",
             },
             {
               label: "GitHub",

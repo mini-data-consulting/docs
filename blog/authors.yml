@@ -1,23 +1,22 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-  page: true
+satya:
+  name: Satyajeet Jadhav
+  title: CTO @ Periscope Chat
+  url: https://github.com/satyajeetjadhav
+  image_url: https://github.com/satyajeetjadhav.png
+  page:
+    permalink: "/satyajeet-jadhav-articles"
   socials:
-    x: yangshunz
-    github: yangshun
+    x: satyajeetjadhav
+    github: satyajeetjadhav
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+vishnu:
+  name: Vishnu Pillai
+  title: CEO @ Periscope Chat
+  url: https://github.com/vishnu-pillai
+  image_url: https://github.com/vishnu-pillai.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+    permalink: "/vishnu-pillai-articles"
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    linkedin: the-vishnu-pillai
+    github: vishnu-pillai
