@@ -14,6 +14,43 @@ To configure a webhook endpoint:
 2. Enter your webhook URL
 3. Set up a webhook secret for security
 
+## Webhook Verification Process
+
+When configuring a webhook, the system performs an automatic verification process to ensure the endpoint is valid and secure:
+
+1. The endpoint must use HTTPS protocol for security
+2. A GET request is sent to your webhook URL
+3. Your endpoint must respond with a 200 status code
+4. The response body must exactly match the webhook secret you provided
+
+### Implementing the Verification Endpoint
+
+Your webhook endpoint should handle both GET and POST requests:
+
+- GET requests are used for initial verification
+- POST requests receive the actual webhook payloads
+
+Example implementation in Node.js:
+
+```javascript
+app.get("/webhook", (req, res) => {
+  // Return the webhook secret for verification
+  res.send(process.env.WEBHOOK_SECRET);
+});
+
+app.post("/webhook", (req, res) => {
+  // Handle actual webhook payloads
+  // ... webhook handling logic ...
+  res.sendStatus(200);
+});
+```
+
+If verification fails, you'll receive one of these error responses:
+
+- "Invalid webhook URL. Must use HTTPS protocol."
+- "Failed to verify webhook endpoint" (if the endpoint is unreachable)
+- "Secret mismatch" (if the returned secret doesn't match)
+
 ## Security
 
 Webhook requests are secured using HMAC SHA-256 signatures. Each request includes a signature in the `X-Signature` header that you can use to verify the authenticity of the webhook payload.
