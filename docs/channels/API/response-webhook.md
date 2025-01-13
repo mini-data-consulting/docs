@@ -98,6 +98,7 @@ The webhook payload contains the agent's response and any metadata that was incl
     "name": "John Doe",
     "identity": "user-uuid-12345"
   },
+  "id": 3490,
   "chat_id": 1202,
   "conversation_id": 1227,
   "role": "assistant",
