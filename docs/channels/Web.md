@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             socketUrl: "https://<your_tenant_name>.periscopechat.com/web",
             title: "Your Chatbot Title",
             headerBgColor: "blue",
-            containerId: "chatbot-container"
+            containerId: "chatbot-container",
             initMessage:"Hey there, how can I help you today?"
         });
     }
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
             socketUrl: "https://<your_tenant_name>.periscopechat.com/web",
             title: "Your Chatbot Title",
             headerBgColor: "blue",
-            containerId: "chatbot-container"
+            containerId: "chatbot-container",
             initMessage:"Hey there, how can I help you today?"
         });
     }
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
             socketUrl: "https://<your_tenant_name>.periscopechat.com/web",
             title: "Your Chatbot Title",
             headerBgColor: "blue",
-            containerId: "chatbot-container"
+            containerId: "chatbot-container",
             initMessage:"Hey there, how can I help you today?"
         });
     }
@@ -161,11 +161,12 @@ window.ChatbotSDK.init(options);
 | `title`         | string          | Yes      | The title displayed in the chat header                                        |
 | `headerBgColor` | string          | Yes      | Color name or hex code for the header background                              |
 | `containerId`   | string          | Yes      | ID of the container element where the chatbot will be rendered                |
-| `iconUrl`       | string          | No       | URL for a custom chat icon                                                    |
+| `iconUrl`       | string          | No       | URL for a custom chat icon (png). Overrides `iconComponent`.                  |
 | `initMessage`   | string          | No       | Initial message from the AI agent shown in the chat interface                 |
 | `questionPills` | `Array<string>` | No       | List of questions to show as question pills. Ideally 2-4 questions work well. |
 | `buttonText`    | string          | No       | Text to display on the button that opens the chat widget.                     |
 | `buttonBgColor` | string          | No       | Background color for the button that opens the chat widget.                   |
+| `iconComponent` | `ReactNode`     | No       | Custom React component to use as the chat icon.                               |
 
 #### Example
 
@@ -180,6 +181,7 @@ window.ChatbotSDK.init({
   questionPills: ["💰 What is your pricing?", "What products do you offer?"],
   buttonText: "Ask Jaika AI",
   buttonBgColor: "black",
+  iconComponent: "<LucideSparkles />",
 });
 ```
 
