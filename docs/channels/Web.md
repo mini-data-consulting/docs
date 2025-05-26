@@ -164,6 +164,8 @@ window.ChatbotSDK.init(options);
 | `iconUrl`       | string          | No       | URL for a custom chat icon                                                    |
 | `initMessage`   | string          | No       | Initial message from the AI agent shown in the chat interface                 |
 | `questionPills` | `Array<string>` | No       | List of questions to show as question pills. Ideally 2-4 questions work well. |
+| `buttonText`    | string          | No       | Text to display on the button that opens the chat widget.                     |
+| `buttonBgColor` | string          | No       | Background color for the button that opens the chat widget.                   |
 
 #### Example
 
@@ -176,6 +178,8 @@ window.ChatbotSDK.init({
   iconUrl: "https://example.com/chat-icon.png",
   initMessage: "Hi! How can I assist you today?",
   questionPills: ["💰 What is your pricing?", "What products do you offer?"],
+  buttonText: "Ask Jaika AI",
+  buttonBgColor: "black",
 });
 ```
 
