@@ -71,9 +71,9 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Documentation",
         },
-        { to: "/release-notes", label: "Release Notes", position: "left" },
+        /*  { to: "/release-notes", label: "Release Notes", position: "left" }, */
         {
           href: "https://github.com/mini-data-consulting/docs",
           label: "GitHub",
@@ -83,7 +83,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      links: [
+      /*   links: [
         {
           title: "Docs",
           items: [
@@ -123,8 +123,8 @@ const config: Config = {
             },
           ],
         },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      ], */
+      copyright: `Copyright © ${new Date().getFullYear()} Periscopechat. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
