@@ -141,6 +141,10 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 ```
 
+### Angular
+
+For detailed instructions on integrating the Periscope Web SDK with Angular applications, please see the dedicated [Angular Integration Guide](./WebAngular.md).
+
 ## Methods
 
 The Pericope Web SDK provides several methods to interact with the chatbot programmatically.
