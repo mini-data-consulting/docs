@@ -165,18 +165,19 @@ window.ChatbotSDK.init(options);
 
 #### Parameters
 
-| Parameter       | Type            | Required | Description                                                                   |
-| --------------- | --------------- | -------- | ----------------------------------------------------------------------------- |
-| `socketUrl`     | string          | Yes      | URL for the WebSocket server connection                                       |
-| `title`         | string          | Yes      | The title displayed in the chat header                                        |
-| `headerBgColor` | string          | Yes      | Color name or hex code for the header background                              |
-| `containerId`   | string          | Yes      | ID of the container element where the chatbot will be rendered                |
-| `iconUrl`       | string          | No       | URL for a custom chat icon (png). Overrides `iconComponent`.                  |
-| `initMessage`   | string          | No       | Initial message from the AI agent shown in the chat interface                 |
-| `questionPills` | `Array<string>` | No       | List of questions to show as question pills. Ideally 2-4 questions work well. |
-| `buttonText`    | string          | No       | Text to display on the button that opens the chat widget.                     |
-| `buttonBgColor` | string          | No       | Background color for the button that opens the chat widget.                   |
-| `iconComponent` | `ReactNode`     | No       | Custom React component to use as the chat icon.                               |
+| Parameter         | Type            | Required | Description                                                                   |
+| ----------------- | --------------- | -------- | ----------------------------------------------------------------------------- |
+| `socketUrl`       | string          | Yes      | URL for the WebSocket server connection                                       |
+| `title`           | string          | Yes      | The title displayed in the chat header                                        |
+| `headerBgColor`   | string          | Yes      | Color name or hex code for the header background                              |
+| `containerId`     | string          | Yes      | ID of the container element where the chatbot will be rendered                |
+| `iconUrl`         | string          | No       | URL for a custom chat icon (png). Overrides `iconComponent`.                  |
+| `initMessage`     | string          | No       | Initial message from the AI agent shown in the chat interface                 |
+| `questionPills`   | `Array<string>` | No       | List of questions to show as question pills. Ideally 2-4 questions work well. |
+| `buttonText`      | string          | No       | Text to display on the button that opens the chat widget.                     |
+| `buttonBgColor`   | string          | No       | Background color for the button that opens the chat widget.                   |
+| `iconComponent`   | `ReactNode`     | No       | Custom React component to use as the chat icon.                               |
+| `onChatWithAgent` | `function`      | No       | Callback function to be invoked when the "Chat with agent" button is clicked. |
 
 #### Example
 
@@ -192,6 +193,9 @@ window.ChatbotSDK.init({
   buttonText: "Ask Jaika AI",
   buttonBgColor: "black",
   iconComponent: "<LucideSparkles />",
+  onChatWithAgent: () => {
+    console.log("Chat with agent button clicked");
+  },
 });
 ```
 
