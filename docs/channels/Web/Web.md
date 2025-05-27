@@ -1,8 +1,10 @@
 ---
+title: Web SDK Overview
+sidebar_label: Web SDK
 sidebar_position: 1
 ---
 
-# Web
+# Web SDK Overview
 
 The **Web** channel lets you add a web chat widget to your website. This widget is a versatile customizable interface that can be embedded in any UI framework or vanilla HTML page.
 
@@ -144,6 +146,10 @@ document.addEventListener('DOMContentLoaded', function() {
 ### Angular
 
 For detailed instructions on integrating the Periscope Web SDK with Angular applications, please see the dedicated [Angular Integration Guide](./WebAngular.md).
+
+### React
+
+For detailed instructions on integrating the Periscope Web SDK with React applications, please see the dedicated [React Integration Guide](./WebReact.md).
 
 ## Methods
 
