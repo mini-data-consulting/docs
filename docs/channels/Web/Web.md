@@ -178,6 +178,7 @@ window.ChatbotSDK.init(options);
 | `buttonBgColor`   | string                   | No       | Background color for the button that opens the chat widget.                   |
 | `iconComponent`   | `ReactNode`              | No       | Custom React component to use as the chat icon.                               |
 | `onChatWithAgent` | `(uuid: number) => void` | No       | Callback function to be invoked when the "Chat with agent" button is clicked. |
+| `chatButtonText`  | string                   | No       | Text to show on the Chat with Agent button                                    |
 
 #### Example
 
@@ -196,6 +197,7 @@ window.ChatbotSDK.init({
   onChatWithAgent: (uuid: number) => {
     console.log("Chat with agent button clicked", uuid);
   },
+  chatButtonText: "Speak with Agent",
 });
 ```
 
